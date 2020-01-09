@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Biblioteka</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="bootstrap.css">
+    <link rel="stylesheet" type='text/css' href="klijent.css">
+    <script type="text/javascript" src="jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="klijent.js"></script>
+
+</head>
+    <div id="main">
+        <div id="meni" >
+            <h1>Biblioteka</h1>
+            <br>
+            <div id="greska"> </div>
+            <h4 id="unosKnjige">Unos nove knjige</h4>
+            <div class="container" id="unosK">
+                <form action="" id="formUnos">
+                    <div class="form-group">
+                        <label for="knjiga">Knjiga: </label>
+                        <input type="text" id="knjiga"
+                        class="form-control" name="knjiga">
+                    </div>
+                    <div class="form-group">
+                            <label for="autori">Autor: </label>
+                            <input type="text" id="autori"
+                            class="form-control" name="autori">
+                        </div>
+                    <input type="submit" value="Unesi"
+                    class="btn btn-primary">
+                </form>
+            </div>
+
+            <h4 id="pretraziknjige">Prtrazi: </h4>
+            <div class="container" id="pretraziK">
+                <form action="" id="formPretrazi">
+                    <div  class="form-group">
+                        <label for="pretrazi">Pretrazi: </label>
+                        <input type="text" name="pretrazi"
+                        class="form-control" id="pretrazi">
+                    </div>
+                    <input type="submit" value="Pretrazi"
+                    class="btn btn-primary">
+                </form>
+            </div>
+            <h4 id="obrisiKnjige">Obrisi: </h4>
+            <div class="container" id="obrisiK">
+                <form id="formObrisi">
+                    <div class="form-group">
+                        <label for="obrisi">Obrisi: </label>
+                        <input type="text" id="obrisi" 
+                        class="form-control">
+                    </div>
+                    <input type="submit" name="Obrisi" 
+                    value="Obrisi" class="btn btn-primary">
+                </form>
+            </div>
+
+        </div> 
+        
+
+        </form>
+        <div id="rezultat" style="overflow-y:scroll" ></div>
+        <div id="autor">By Predrag</div>
+    </div>
+
+</html>
